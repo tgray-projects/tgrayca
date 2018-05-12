@@ -2,10 +2,10 @@ sudo: true
 dist: trusty
 
 before_install:
-- openssl aes-256-cbc -K $encrypted_85c67507a308_key -iv $encrypted_85c67507a308_iv -in deploy.enc -out deploy -d
+- openssl aes-256-cbc -K $encrypted_85c67507a308_key -iv $encrypted_85c67507a308_iv -in deploy.enc -out deploy.key -d
 - chmod 600 deploy
-- mv deploy ~/.ssh/id_rsa
 script:
   - binaries/hugo
 after_success:
-  - rsync -avz -e "ssh -vvv -i ~/.ssh/id_rsa" --progress --delete public/ ${deploy_user}@${deploy_host}:~/${deploy_path}
+  - rsync -avz -e "ssh -vvv -i deploy.key" --progress --delete public/ ${deploy_user}@${deploy_host}:~/${deploy_path}
+  - rm deploy.key
