@@ -7,5 +7,5 @@ before_install:
 script:
   - binaries/hugo
 after_success:
-  - rsync -avz -e "ssh -vvv -i deploy.key" --progress --delete public/ ${deploy_user}@${deploy_host}:~/${deploy_path}
+  - rsync -avz -e "ssh -i deploy.key" --progress --delete public/ ${deploy_user}@${deploy_host}:~/${deploy_path}
   - rm deploy.key
