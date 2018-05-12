@@ -2,7 +2,7 @@
 title: "Projects"
 date: 2018-05-11T18:51:14-07:00
 weight: 20
-draft: true
+draft: false
 ---
 
 ### Some of the projects I've done lately..

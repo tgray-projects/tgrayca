@@ -2,7 +2,7 @@
 title: "Contact"
 date: 2018-05-11T19:26:43-07:00
 weight: 50
-draft: true
+draft: false
 ---
 
 <form id="contactform" method="post" action="https://formspree.io/web@tgray.ca">
