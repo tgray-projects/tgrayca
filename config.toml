@@ -1,14 +1,12 @@
 baseurl = "/"
 title = "Thomas Gray"
 theme = "dimension"
-languageCode = "en-us"
-defaultContentLanguage = "en"
 enableRobotsTXT = true
 disableKinds=["RSS"]
 
 [params]
-  description = '<!--[-->A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<!--]--><br />
-                <!--[-->for free under the <a href="https://html5up.net/license">Creative Commons</a> license.<!--]-->'
+  description = '<!--[-->Homesteading on a small farm on the west coast of Canada, living in an area known locally as "Paradise Valley" on the Sunshine Coast while telecommuting on a fibre internet connection.  Troubleshooting code and tractors in equal parts some days.<!--]--><br /><br />
+                <!--[-->But mostly, I love technology.<!--]-->'
   logo = "fa-cog"
   copyright = "Thomas Gray 2018"
 
@@ -21,7 +19,3 @@ disableKinds=["RSS"]
   medium = "github"
   icon = "github"
   link = "https://github.com/tgray-projects"
-
-title = "Dimension"
-description = '<!--[-->A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<!--]--><br />
-                <!--[-->for free under the <a href="https://html5up.net/license">Creative Commons</a> license.<!--]-->'
