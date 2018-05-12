@@ -5,9 +5,7 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_85c67507a308_key -iv $encrypted_85c67507a308_iv -in deploy.enc -out deploy -d
 - chmod 600 deploy
 - mv deploy ~/.ssh/id_rsa
-- sudo apt-get --yes install snapd
-- sudo snap install hugo
 script:
-  - hugo
+  - binaries/hugo
 after_success:
   - rsync -avz --delete public/ ${deploy_user}@${deploy_host}:~/${deploy_path}
