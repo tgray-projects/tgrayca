@@ -8,4 +8,4 @@ before_install:
 script:
   - binaries/hugo
 after_success:
-  - rsync -avz --delete public/ ${deploy_user}@${deploy_host}:~/${deploy_path}
+  - rsync -avz -e "ssh -i $HOME/.ssh/id_rsa" --progress --delete public/ ${deploy_user}@${deploy_host}:~/${deploy_path}
