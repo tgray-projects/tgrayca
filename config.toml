@@ -3,6 +3,7 @@ title = "Thomas Gray"
 theme = "dimension"
 enableRobotsTXT = true
 disableKinds=["RSS"]
+googleAnalytics = "UA-119428181-1"
 
 [params]
   description = '<!--[-->Homesteading on a small farm on the west coast of Canada, living in an area known locally as "Paradise Valley" on the Sunshine Coast while telecommuting on a fibre internet connection.  Troubleshooting code and tractors in equal parts some days.<!--]--><br /><br />
@@ -19,3 +20,8 @@ disableKinds=["RSS"]
   medium = "github"
   icon = "github"
   link = "https://github.com/tgray-projects"
+
+[[params.social]]
+  medium = "stackoverflow"
+  icon = "stack-overflow"
+  link = "https://stackoverflow.com/story/tgray"
