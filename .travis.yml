@@ -1,11 +1,18 @@
 sudo: true
 dist: trusty
 
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_85c67507a308_key -iv $encrypted_85c67507a308_iv -in deploy.enc -out deploy.key -d
 - chmod 600 deploy.key
+- gem install html-proofer
 script:
   - binaries/hugo
+  - timeout 30s htmlproofer _site --only-4xx --external_only --check-html --check-favicon --allow-hash-href --http-status-ignore 429
+
 after_success:
   - rsync -avz -e "ssh -i deploy.key -o 'StrictHostKeyChecking no'" --progress --delete public/ ${deploy_user}@${deploy_host}:${deploy_path}
   - rm deploy.key
