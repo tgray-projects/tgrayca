@@ -8,11 +8,11 @@ draft: false
 ### DevOps
 ##### KeyNexus Inc.
 Architecting and building a continuous integration and deployment framework on AWS and Google Cloud for a pre-existing virtual machine based software product. Working closely with developers, QA, and management to change the test and build process from "works on my machine" to "just works".
-Deploying a secure enterprise grade encryption key management service on Google Cloud with a high availability load balancing proxy and redundant failover systems.
+Deploying a secure enterprise grade encryption key management service to the cloud.
 
 ### Community Development Manager
 ##### Perforce Technologies Inc
-Lead a team to expand Perforce's open source software offerings to include all major client software products to help customers more closely integrate our products to their internal workflow, increasing customer retention.  Coordinated development, testing, and deployment of features for the Perforce Workshop as part of an effort to match other free service offerings in the market (ie: GitHub).
+Lead an international remote team to expand Perforce's open source software offerings to include all major client software products to help customers more closely integrate our products to their internal workflow, increasing customer retention.  Coordinated development, testing, and deployment of features for the Perforce Workshop as part of an effort to match other free service offerings in the market (ie: GitHub).
 
 Coordinated technical and development support for Perforce Community Support channels.
 
