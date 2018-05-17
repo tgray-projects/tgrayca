@@ -1,11 +1,12 @@
 ---
 title: "Projects"
 date: 2018-05-11T18:51:14-07:00
-weight: 20
+weight: 30
 draft: false
 ---
 
-### Some of the projects I've done lately..
+### Some of the technical projects I've done for fun
+### (and profit)
 
 #### Arduino Incubator [<span class="icon fa-github"></span>](https://github.com/tgray-projects/incubator)
 Uses a temperature sensor and a relay to turn on/off a lightbulb to control the temperature in a homemade duck egg incubator.  Intitially it had connections for an exhaust fan and an air circulation fan, but they proved to be unneeded.
